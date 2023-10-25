@@ -37,28 +37,28 @@ You will notice a script named 'B_v1_data_scrambler.py'. This script 'contaminat
 ## File directory structure:
 
 ## Airflow Installation Folder:
--> airflow-webserver.pid
--> airflow.cfg
--> webserver_config.py
--> logs
--> dags
-------> DAG_0.py
-------> includes
-----------> A_v1_first_setup.py
-----------> B_v1_data_scrambler.py
-----------> C_v1_etl_pyspark.py
-----------> D_v1_write_to_s3.py
-----------> data
---------------> input_data.csv
---------------> batches
-------------------> processed
-----------------------> heart_dirty_dataset_0.csv
-------------------> heart_dirty_dataset_1.csv
------------------->
---------------> parquets
-------------------> processed
-----------------------> heart_data2023_10_23_190556
-------------------> heart_data2023_10_23_20010
+- airflow-webserver.pid
+- airflow.cfg
+- webserver_config.py
+- logs
+- dags
+  - DAG_0.py
+  - includes
+    - A_v1_first_setup.py
+    - B_v1_data_scrambler.py
+    - C_v1_etl_pyspark.py
+    - D_v1_write_to_s3.py
+    - data
+        - input_data.csv
+        - batches
+            - processed
+                - heart_dirty_dataset_0.csv
+                - heart_dirty_dataset_1.csv
+            - (other files or directories)
+        - parquets
+            - processed
+                - heart_data2023_10_23_190556
+                - heart_data2023_10_23_20010
         
 
 
