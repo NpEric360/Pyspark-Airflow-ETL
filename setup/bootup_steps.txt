@@ -1,0 +1,15 @@
+Once all dependencies are installed on your machine:
+
+1. Download dataset from:
+    1. https://www.kaggle.com/datasets/iamsouravbanerjee/heart-attack-prediction-dataset
+2. Run Script A: setup()
+3. Run Script B: scramble_data() 
+4. Create an AWS database and crawler
+    1. Crawl the S3 bucket and create a table in the database
+5. Setup Athena and query the table
+6. Connect Tableau to Athena
+    1. Login creditentials:
+        1. SERVER: [athena.us-east-2.amazonaws.com](http://athena.us-east-2.amazonaws.com/)
+            1. https://docs.aws.amazon.com/general/latest/gr/athena.html
+        2. Athena S3 Destination Bucket:
+        3. IAM username and password
