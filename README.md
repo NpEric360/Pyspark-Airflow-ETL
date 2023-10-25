@@ -15,18 +15,19 @@ This repository contains an end-to-end ETL (Extract, Transform, Load) pipeline f
    - The transformed data is stored in the Apache Parquet file format, which is well-suited for analytical workloads.
 
 3. **AWS S3 Integration**:
-   - The processed data is uploaded to an AWS S3 bucket, offering secure, scalable, and cost-effective storage for your data.
+   - The processed data is then uploaded to an AWS S3 bucket.
 
 4. **AWS Crawler**:
-   - An AWS crawler is employed to create table definitions based on the uploaded Parquet files. This step simplifies data access and ensures compatibility with services like Amazon Athena.
+   - An AWS crawler is employed to create table definitions based on the uploaded Parquet files. This step allows SQL querying using Amazon Athena.
 
 5. **Data Analysis with Amazon Athena**:
    - Amazon Athena is utilized to query the tables created by the AWS crawler. This provides a serverless, interactive query service for analyzing your data with SQL.
 
 6. **Data Visualization with Tableau**:
-   - To visualize your data and gain insights, you can connect Tableau to the destination S3 bucket containing all Amazon Athena queries. This enables powerful data visualization and reporting capabilities.
+   - To visualize your data and gain insights, Tableau is connected to the destination S3 bucket containing all Amazon Athena queries. This enables powerful data visualization and reporting capabilities.
 
-
+##Note:
+You will notice a script named 'B_v1_data_scrambler.py'. This script 'contaminates' the original dataset with outliers, duplicate rows, and incorrect data types just for testing the data transformations performed in C_v1_etl_pyspark.py.
 
 
 ##File directory structure:
