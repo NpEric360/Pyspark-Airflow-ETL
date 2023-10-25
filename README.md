@@ -25,13 +25,14 @@ This repository contains an end-to-end ETL (Extract, Transform, Load) pipeline f
 
 6. **Data Visualization with Tableau**:
    - To visualize your data and gain insights, Tableau is connected to the destination S3 bucket containing all Amazon Athena queries. This enables powerful data visualization and reporting capabilities.
-  ![Alt Text](https://nperic0422.imgur.com/all/)
-  
+   - <img src="https://i.imgur.com/qORMyWb.png"/>
+
    
 
 ## Airflow for Workflow Orchestration
 1. Airflow is used to automate the ETL processes found in scripts C_v1_etl_pyspark.py and D_v1_write_to_s3.py after all dependencies and directories have been successfully installed.
    ![Alt Text](https://nperic0422.imgur.com/all/)
+   - <img src="https://i.imgur.com/vmyM9gd.png"/>
 
 ## Note:
 You will notice a script named 'B_v1_data_scrambler.py'. This script 'contaminates' the original dataset with outliers, duplicate rows, and incorrect data types just for testing the data transformations performed in C_v1_etl_pyspark.py.
